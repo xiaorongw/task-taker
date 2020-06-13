@@ -5,9 +5,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: rgb(244, 243, 239);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* .navbar {
+  background-color: rgb(203, 155, 128);
 }
+
+.navbar-text {
+  color: black;
+} */
+
+.today {
+  margin-top: 20px;
+}
+
+.task-button {
+  background-color: rgb(255, 244, 238);
+  border-color: rgb(255, 244, 238);
+  color: #383838;
+}
+
+
