@@ -24,7 +24,7 @@ class TodoInput extends Component {
                 </div>
                 <div className='row'>
                     <div className='col'>
-                        <Card body style={{backgroundColor:'rgb(193, 192, 175)', borderColor: 'rgb(193, 192, 175)', marginTop:'20px'}}>
+                        <Card body style={{backgroundColor:'rgb(111, 133, 159)', borderColor: 'rgb(111, 133, 159)', marginTop:'20px'}}>
                             {/* <CardText>Task of the day</CardText> */}
                             <div className='row d-flex justify-content-between'>
                                 <div className='col-10'>
