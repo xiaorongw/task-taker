@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import {Card, Button, Input} from 'reactstrap';
 import { SingleDatePicker } from 'react-dates';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
 class TodoInput extends Component {
     
@@ -31,7 +29,6 @@ class TodoInput extends Component {
                                     <Input type='text' placeholder='Task of the day' />
                                 </div>
                                 <div className='col-2'>
-                                    {/* <FontAwesomeIcon className="icon" icon={faCalendar} /> */}
                                     <SingleDatePicker
                                         date={this.state.date} // momentPropTypes.momentObj or null
                                         onDateChange={date => this.setState({ date })} // PropTypes.func.isRequired
@@ -47,7 +44,7 @@ class TodoInput extends Component {
                             </div>
                             <div className='row' style={{marginTop:'10px'}}>
                                 <div className='col d-flex justify-content-start'>
-                                    <Button className='task-button'>Add Task</Button>
+                                    <Button className='task-button' onClick={()=>alert(JSON.stringify(this.state.date))}>Add Task</Button>
                                 </div>
                             </div>
 

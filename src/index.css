@@ -34,3 +34,41 @@ h1, h2 {
   color: #383838;
 }
 
+.todo-list {
+  margin-top: 20px;
+  text-align: left;
+
+}
+
+.todo-item {
+  background-color: rgba(255,255,255,0.2);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.todo-item:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.icon {
+  color: gray;
+  font-size: 11px;
+  margin-right: 10px;
+}
+
+.task-icon {
+  color: #383838;
+  font-weight: lighter;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.change-icon .task-icon + .task-icon,
+.change-icon:hover .task-icon {
+  display: none;
+}
+.change-icon:hover .task-icon + .task-icon {
+  display: inline;
+}
+
