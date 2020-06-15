@@ -15,12 +15,10 @@ class TodoInput extends Component {
     
     constructor(props) {
         super(props);
-
         this.state = {
             task: '',
             date: null
-        }
-        
+        };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.resetFields = this.resetFields.bind(this);
@@ -40,7 +38,6 @@ class TodoInput extends Component {
             this.props.addNewTask(this.state.task, '');
         }
         this.resetFields();
-        // console.log(JSON.stringify(this.state)); 
     }
 
     resetFields() {
@@ -73,6 +70,8 @@ class TodoInput extends Component {
                                             placeholder="Due date"
                                             small
                                             block
+                                            numberOfMonths={1}
+                                            anchorDirection="right"
                                         />
                                     </div>
                                 </div>
