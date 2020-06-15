@@ -8,10 +8,8 @@ export const Reducer = (state = {tasks: []}, action) => {
             return {...state, tasks: newTaskList};
 
         case ActionTypes.TOGGLE_COMPLETE:
-            const otherTasksList = state.tasks.filter((task) => task.id != action.payload);
-            console.log(JSON.stringify(otherTasksList));
-            let completedTask = state.tasks.filter((task) => task.id == action.payload)[0];
-            console.log(JSON.stringify(completedTask));
+            const otherTasksList = state.tasks.filter((task) => task.id !== action.payload);
+            let completedTask = state.tasks.filter((task) => task.id === action.payload)[0];
             const currStatus = completedTask.completed;
             completedTask = {...completedTask, completed: !currStatus};
             return {...state, tasks: otherTasksList.concat(completedTask)}

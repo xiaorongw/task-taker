@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-import { ListGroup, ListGroupItem, Input } from 'reactstrap';
+import { ListGroup } from 'reactstrap';
 import TaskItem from './TaskItemComponent';
 
 

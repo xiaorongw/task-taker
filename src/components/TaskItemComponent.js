@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { ListGroupItem, Input } from 'reactstrap';
+import { ListGroupItem } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faCircle, faCheckCircle } from '@fortawesome/free-regular-svg-icons';
 import { toggleComplete } from '../redux/ActionCreators';

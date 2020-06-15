@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Card, Button, Input, Form, FormGroup} from 'reactstrap';
+import {Card, Button, Input, Form } from 'reactstrap';
 import { SingleDatePicker } from 'react-dates';
 import { connect } from 'react-redux';
 import { addNewTask } from '../redux/ActionCreators';
