@@ -49,9 +49,10 @@ class TodoInput extends Component {
     render() {
         return(
             <div className='container'>
-                <div className='row today-container'>
-                    <div className='col d-flex justify-content-start today'>
+                <div className='row'>
+                    <div className='col d-flex justify-content-start align-items-center today'>
                         <h3>Today</h3>
+                        <span className='today-date'>{moment().format('dddd, Do MMM')}</span>
                     </div>
                 </div>
                 <div className='row'>

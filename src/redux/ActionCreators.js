@@ -14,3 +14,10 @@ export const addTask = (taskObj) => {
         payload: taskObj
     })
 }
+
+export const toggleComplete = (taskId) => {
+    return({
+        type: 'TOGGLE_COMPLETE',
+        payload: taskId
+    })
+}

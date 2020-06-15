@@ -1,7 +1,5 @@
 import React from 'react';
 import TodoInput from './TodoInputComponent';
-import Header from './HeaderComponent';
-import TodoList from './TodoListComponent';
 import Tab from './TabComponent';
 
 const Main = () => {
@@ -9,7 +7,6 @@ const Main = () => {
         <div>   
             <TodoInput />
             <Tab />
-            {/* <TodoList />             */}
         </div>
     );
 }
