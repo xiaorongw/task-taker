@@ -51,12 +51,12 @@ class TodoInput extends Component {
             <div className='container'>
                 <div className='row'>
                     <div className='col d-flex justify-content-start today'>
-                        <h2>Today</h2>
+                        <h3>Today</h3>
                     </div>
                 </div>
                 <div className='row'>
                     <div className='col'>
-                        <Card body style={{backgroundColor:'rgb(111, 133, 159)', borderColor: 'rgb(111, 133, 159)', marginTop:'20px'}}>
+                        <Card body style={{backgroundColor:'rgb(193, 192, 175, 0.8)', borderColor: 'rgb(193, 192, 175, 0.8)', marginTop:'20px'}}>
                             <Form onSubmit={this.handleSubmit}>
                                 <div className='row d-flex justify-content-between'>
                                     <div className='col-10'>

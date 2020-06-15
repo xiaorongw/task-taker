@@ -8,8 +8,8 @@ body {
 
   background-color: rgb(244, 243, 239);
   /* background-image: url('./assets/background2.png'); */
-  background-image: url('./assets/test.jpg');
-  background-size: cover;
+  /* background-image: url('./assets/test.jpg'); */
+  /* background-size: cover; */
 }
 
 body, html {
@@ -26,16 +26,22 @@ body, html {
 } */
 
 .today {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
-.task-button {
-  background-color: rgb(241, 241, 241);
-  border-color: rgb(241, 241, 241);
+.task-button, .task-button:focus, .btn-secondary:not(:disabled):not(.disabled):active {
+  background-color: rgb(244, 243, 239);
+  border-color: rgb(244, 243, 239);
   color: #383838;
 }
 
-h1, h2 {
+.task-button:hover {
+  background-color: rgb(193, 192, 175);
+  border-color: rgb(193, 192, 175);
+  color: #383838;
+}
+
+h1, h2, h3 {
   color: #383838;
 }
 
@@ -47,14 +53,14 @@ h1, h2 {
 }
 
 .todo-item {
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgb(255, 244, 238, 0.5);
   border-top: none;
   border-left: none;
   border-right: none;
 }
 
 .todo-item:hover {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .icon {
@@ -72,4 +78,20 @@ h1, h2 {
 
 .tab-container {
   padding-top: 20px;
+}
+
+.nav-tabs {
+  border-color: rgb(193, 192, 175);
+  border-width: 0.8px;
+  color: #383838;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: rgb(203, 155, 128, 0.5);
+  border-color: rgba(255,255,255,0);
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: rgb(203, 155, 128, 0.5);
+  border-width: 0.5px;
 }
