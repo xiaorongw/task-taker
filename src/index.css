@@ -12,6 +12,11 @@ body {
   background-size: cover;
 }
 
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
 /* .navbar {
   background-color: rgb(203, 155, 128);
 }
@@ -37,7 +42,8 @@ h1, h2 {
 .todo-list {
   margin-top: 20px;
   text-align: left;
-
+  height: 50vh;
+  overflow-y: auto;
 }
 
 .todo-item {
@@ -64,3 +70,6 @@ h1, h2 {
   font-size: 12px;
 }
 
+.tab-container {
+  padding-top: 20px;
+}

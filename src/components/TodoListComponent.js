@@ -85,9 +85,7 @@ class TaskItem extends Component {
                 </div>
             );
         }
-
-    }
-    
+    }   
 }
 
 

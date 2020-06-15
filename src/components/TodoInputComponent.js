@@ -30,14 +30,16 @@ class TodoInput extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        if (this.state.date !== null) {
-            const dueDate = moment(this.state.date).format('DD-MMM-YYYY');
-            this.props.addNewTask(this.state.task, dueDate);
+        if (this.state.task !== '') {
+            if (this.state.date !== null) {
+                const dueDate = moment(this.state.date).format('DD-MMM-YYYY');
+                this.props.addNewTask(this.state.task, dueDate);
+            }
+            else {
+                this.props.addNewTask(this.state.task, '');
+            }
+            this.resetFields();
         }
-        else {
-            this.props.addNewTask(this.state.task, '');
-        }
-        this.resetFields();
     }
 
     resetFields() {
