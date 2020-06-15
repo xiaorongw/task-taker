@@ -64,11 +64,3 @@ h1, h2 {
   font-size: 12px;
 }
 
-.change-icon .task-icon + .task-icon,
-.change-icon:hover .task-icon {
-  display: none;
-}
-.change-icon:hover .task-icon + .task-icon {
-  display: inline;
-}
-

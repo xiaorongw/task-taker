@@ -1,5 +1,5 @@
-import React, {useState, Component} from 'react';
-import TODO from '../assets/db.js';
+import React, {Component} from 'react';
+import { connect } from 'react-redux';
 import { ListGroup, ListGroupItem, Input } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faCircle, faCheckCircle } from '@fortawesome/free-regular-svg-icons';
@@ -90,34 +90,29 @@ class TaskItem extends Component {
     
 }
 
-const RenderTasks = () => {
-    const todolist = TODO.map( (item) => {
+
+const RenderTasks = (taskList) => {
+    const todolist = taskList.map( (item) => {
         return <TaskItem item={item} />
     })
     return todolist;
 }
 
-class TodoList extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            taskIsHovered: false
-        }
-    }
 
-    toggleTaskHover() {
-        this.setState({taskIsHovered: !this.state.taskIsHovered})
-    }
-    
-    render() {
-        return(
-            <div className='container todo-list'>
-                <ListGroup flush>
-                    {RenderTasks()}
-                </ListGroup>
-            </div>      
-        );
+const mapStateToProps = (state) => {
+    return {
+        tasks: state.tasks
     }
 }
 
-export default TodoList;
+const TodoList = (props) => {    
+    return(
+        <div className='container todo-list'>
+            <ListGroup flush>
+                {RenderTasks(props.tasks)}
+            </ListGroup>
+        </div>      
+    );
+}
+
+export default connect(mapStateToProps)(TodoList);
