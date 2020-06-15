@@ -49,14 +49,14 @@ class TodoInput extends Component {
     render() {
         return(
             <div className='container'>
-                <div className='row'>
+                <div className='row today-container'>
                     <div className='col d-flex justify-content-start today'>
                         <h3>Today</h3>
                     </div>
                 </div>
                 <div className='row'>
                     <div className='col'>
-                        <Card body style={{backgroundColor:'rgb(193, 192, 175, 0.8)', borderColor: 'rgb(193, 192, 175, 0.8)', marginTop:'20px'}}>
+                        <Card body style={{backgroundColor:'rgba(136, 144, 133, 0.7)', borderColor: 'rgba(136, 144, 133, 0.7)', marginTop:'10px'}}>
                             <Form onSubmit={this.handleSubmit}>
                                 <div className='row d-flex justify-content-between'>
                                     <div className='col-10'>

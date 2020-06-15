@@ -6,15 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: rgb(244, 243, 239);
+  background-color:rgb(235, 236, 231);
+
   /* background-image: url('./assets/background2.png'); */
   /* background-image: url('./assets/test.jpg'); */
   /* background-size: cover; */
-}
-
-body, html {
-  height: 100%;
-  overflow: hidden;
 }
 
 /* .navbar {
@@ -25,20 +21,43 @@ body, html {
   color: black;
 } */
 
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(136, 144, 133, 0.5); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(136, 144, 133, 0.6); 
+}
+
+
 .today {
   margin-top: 15px;
 }
 
 .task-button, .task-button:focus, .btn-secondary:not(:disabled):not(.disabled):active {
-  background-color: rgb(244, 243, 239);
-  border-color: rgb(244, 243, 239);
+  background-color: rgb(215, 214, 206);
+  border-color: rgb(215, 214, 206);
   color: #383838;
 }
 
 .task-button:hover {
-  background-color: rgb(193, 192, 175);
-  border-color: rgb(193, 192, 175);
-  color: #383838;
+  background-color: rgb(136, 144, 133);
+  border-color: rgb(136, 144, 133);
+  color: #f4f4f4;
 }
 
 h1, h2, h3 {
@@ -53,14 +72,15 @@ h1, h2, h3 {
 }
 
 .todo-item {
-  background-color: rgb(255, 244, 238, 0.5);
+  background-color: rgb(223, 214, 207, 0.3);
   border-top: none;
   border-left: none;
   border-right: none;
+  color: #383838;
 }
 
 .todo-item:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(223, 214, 207, 0.5);
 }
 
 .icon {
@@ -81,17 +101,17 @@ h1, h2, h3 {
 }
 
 .nav-tabs {
-  border-color: rgb(193, 192, 175);
-  border-width: 0.8px;
+  border-color: rgb(223, 214, 207);
+  border-width: 0.9px;
   color: #383838;
 }
 
 .nav-tabs .nav-link.active {
-  background-color: rgb(203, 155, 128, 0.5);
+  background-color: rgb(223, 214, 207, 0.9);
   border-color: rgba(255,255,255,0);
 }
 
 .nav-tabs .nav-link:hover {
-  border-color: rgb(203, 155, 128, 0.5);
+  border-color: rgb(223, 214, 207);
   border-width: 0.5px;
 }

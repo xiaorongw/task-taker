@@ -43,17 +43,17 @@ const Tab = (props) => {
                 <TabContent activeTab={activeTab}>
                     <TabPane tabId="1">
                         <Row>
-                            <TodoList />
+                            <TodoList tabFilter='outstanding' />
                         </Row>
                     </TabPane>
                     <TabPane tabId="2">
                         <Row>
-                            <TodoList />
+                            <TodoList tabFilter='completed' />
                         </Row>
                     </TabPane>
                     <TabPane tabId="3">
                         <Row>
-                            <TodoList />
+                            <TodoList tabFilter='all' />
                         </Row>
                     </TabPane>
                 </TabContent>    
