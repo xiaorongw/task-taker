@@ -20,7 +20,7 @@ const Tab = (props) => {
                         className={classnames({ active: activeTab === '1' })}
                         onClick={() => { toggle('1'); }}
                     >
-                        Outstanding <span className='emoji' role="img" aria-label="smiley">😦</span>
+                        <img className='emoji' src={require('../assets/panic-blob.png')} /> Outstanding
                     </NavLink>
                     </NavItem>
                     <NavItem>
@@ -28,7 +28,7 @@ const Tab = (props) => {
                         className={classnames({ active: activeTab === '2' })}
                         onClick={() => { toggle('2'); }}
                     >
-                        Completed <span className='emoji' role="img" aria-label="smiley">😉</span>
+                        <img className='emoji' src={require('../assets/happy-blob.png')} /> Completed
                     </NavLink>
                     </NavItem>
                     <NavItem>

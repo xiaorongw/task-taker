@@ -19,33 +19,25 @@ const mapStateToProps = (state) => {
 
 const TodoList = (props) => {  
     const tabFilter = props.tabFilter;
-    
-    switch (tabFilter) {
-        case 'completed':
-            return (
-                <div className='container todo-list'>
-                    <ListGroup flush>
-                        {RenderTasks(props.tasks.filter(task => task.completed))}
-                    </ListGroup>
-                </div>  
-            );
-        case 'outstanding':
-            return (
-                <div className='container todo-list'>
-                    <ListGroup flush>
-                        {RenderTasks(props.tasks.filter(task => !task.completed))}
-                    </ListGroup>
-                </div>  
-            );
-        default: // all
-            return (
-                <div className='container todo-list'>
-                    <ListGroup flush>
-                        {RenderTasks(props.tasks)}
-                    </ListGroup>
-                </div>  
-            );                    
+    let taskList;
+
+    if (tabFilter == 'completed') {
+        taskList = props.tasks.filter(task => task.completed);
+    }    
+    else if (tabFilter == 'outstanding') {
+        taskList = props.tasks.filter(task => !task.completed);
     }
+    else { // all
+        taskList = props.tasks;
+    }
+
+    return (
+        <div className='container todo-list'>
+            <ListGroup flush>
+                {RenderTasks(taskList)}
+            </ListGroup>
+        </div>  
+    )
 }
 
 export default connect(mapStateToProps)(TodoList);

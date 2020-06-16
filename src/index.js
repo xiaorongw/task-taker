@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-dates/lib/css/_datepicker.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import 'fontsource-roboto';
 import './index.css';
 
 ReactDOM.render(
