@@ -1,3 +1,3 @@
 ## Task Taker
 
-Simple To-Do application built with React. View the application at http://task-taker.herokuapp.com/ .
+Simple to-do list application built with React. View the application at http://task-taker.herokuapp.com/ .
