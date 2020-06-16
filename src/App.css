@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(136, 144, 133, 0.5); 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(136, 144, 133, 0.6); 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1, h2, h3 {
+  color: #505050;
 }
 
-.App-link {
-  color: #61dafb;
+.today {
+  margin-top: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span.today-date {
+  padding-left: 10px;
+  color: #606060;
+}
+
+.form-control:focus {
+  border: none;
+}
+
+.task-button, .task-button:focus, .btn-secondary:not(:disabled):not(.disabled):active {
+  background-color: rgb(215, 214, 206);
+  border-color: rgb(215, 214, 206);
+  color: #383838;
+}
+
+.task-button:hover {
+  background-color: rgb(136, 144, 133);
+  border-color: rgb(136, 144, 133);
+  color: #f4f4f4;
+}
+
+.todo-list {
+  margin-top: 20px;
+  text-align: left;
+  height: 50vh;
+  overflow-y: auto;
+}
+
+.todo-item {
+  background-color: rgb(223, 214, 207, 0.3);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #383838;
+}
+
+.todo-item:hover {
+  background-color: rgb(223, 214, 207, 0.5);
+}
+
+.icon {
+  color: gray;
+  font-size: 11px;
+  margin-right: 10px;
+}
+
+.task-icon {
+  color: #383838;
+  font-weight: lighter;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.tab-container {
+  padding-top: 20px;
+}
+
+.nav-tabs {
+  border-color: rgb(223, 214, 207);
+  border-width: 0.9px;
+  color: #383838;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: rgb(223, 214, 207, 0.9);
+  border-color: rgba(255,255,255,0);
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: rgb(223, 214, 207);
+  border-width: 0.5px;
+}
+
+span.emoji {
+  opacity: 0.7;
 }
