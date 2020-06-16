@@ -57,9 +57,14 @@ class TaskItem extends Component {
                                         : <FontAwesomeIcon className="task-icon" icon={faCheckCircle} /> // if already completed, stay checked
                             }
                             {
-                                !this.props.item.completed
-                                    ? <span>{this.props.item.task}</span>
-                                    : <span style={{textDecoration:'line-through'}}>{this.props.item.task}</span>
+                                !this.state.hover ? // if not hovered
+                                    !this.props.item.completed
+                                        ? <span>{this.props.item.task}</span>
+                                        : <span style={{textDecoration:'line-through'}}>{this.props.item.task}</span>
+                                : // if hovered over
+                                    !this.props.item.completed
+                                        ? <span style={{textDecoration:'line-through'}}>{this.props.item.task}</span>
+                                        : <span style={{textDecoration:'line-through'}}>{this.props.item.task}</span>
                             }
                             <br />
                             <FontAwesomeIcon className="icon" icon={faCalendar} />
@@ -89,9 +94,14 @@ class TaskItem extends Component {
                                         : <FontAwesomeIcon className="task-icon" icon={faCheckCircle} /> // if already completed, stay checked
                             }
                             {
-                                !this.props.item.completed
-                                    ? <span>{this.props.item.task}</span>
-                                    : <span style={{textDecoration:'line-through'}}>{this.props.item.task}</span>
+                                !this.state.hover ? // if not hovered
+                                    !this.props.item.completed
+                                        ? <span>{this.props.item.task}</span>
+                                        : <span style={{textDecoration:'line-through'}}>{this.props.item.task}</span>
+                                : // if hovered over
+                                    !this.props.item.completed
+                                        ? <span style={{textDecoration:'line-through'}}>{this.props.item.task}</span>
+                                        : <span style={{textDecoration:'line-through'}}>{this.props.item.task}</span>
                             }
                         </ListGroupItem>
                     </div>
