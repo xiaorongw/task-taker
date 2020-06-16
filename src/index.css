@@ -47,6 +47,10 @@ span.today-date {
   color: #606060;
 }
 
+.form-control:focus {
+  border: none;
+}
+
 .task-button, .task-button:focus, .btn-secondary:not(:disabled):not(.disabled):active {
   background-color: rgb(215, 214, 206);
   border-color: rgb(215, 214, 206);
