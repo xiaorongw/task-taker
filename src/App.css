@@ -55,7 +55,7 @@ span.today-date {
 .todo-list {
   margin-top: 20px;
   text-align: left;
-  height: 50vh;
+  /* height: 50vh; */
   overflow-y: auto;
 }
 

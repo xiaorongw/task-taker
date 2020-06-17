@@ -5,7 +5,7 @@ import Tab from './TabComponent';
 const Main = () => {
     return (
         <div>   
-            <TodoInput />
+            <TodoInput/>
             <Tab />
         </div>
     );
