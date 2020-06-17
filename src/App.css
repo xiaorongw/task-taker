@@ -104,18 +104,22 @@ span.today-date {
   border-width: 0.5px;
 }
 
+/* images */
 .emoji {
   /* opacity: 0.7; */
   width: 27px;
   margin-right: 3px;
 }
-
 .today-img {
   width: 70px;
   /* margin-right: 10px; */
 }
-
 .addtask-img {
   width: 22px;
   margin-right: 10px;
+}
+
+.SingleDatePickerInput {
+  border-radius: 5px;
+  overflow: hidden;
 }
