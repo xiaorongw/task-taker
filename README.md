@@ -1,6 +1,6 @@
 ## Task Taker
 
-Responsive to-do list application built with React. View the application at http://task-taker.herokuapp.com/ .
+Responsive to-do list web application built with React. View the application at http://task-taker.herokuapp.com/ .
 &nbsp;
 
 &nbsp;
