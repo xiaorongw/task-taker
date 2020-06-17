@@ -61,7 +61,7 @@ class TodoInput extends Component {
                         style={{backgroundColor:'rgba(136, 144, 133, 0.7)', borderColor: 'rgb(235, 236, 231)', marginTop:'10px', borderRadius:'20px'}}>
                             <div className='container'>
                                 <div className='row d-flex justify-content-center align-items-center'>
-                                    <div className='col-sm-12 col-lg-1 d-flex justify-content-center'>
+                                    <div className='col-sm-12 col-lg-1 d-flex justify-content-center align-self-center'>
                                         <img className='today-img' src={require('../assets/today.png')} />
                                     </div>
                                     <div className='col-sm-12 col-lg-11'>
