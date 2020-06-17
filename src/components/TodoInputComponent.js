@@ -57,33 +57,50 @@ class TodoInput extends Component {
                 </div>
                 <div className='row'>
                     <div className='col'>
-                        <Card body style={{backgroundColor:'rgba(136, 144, 133, 0.7)', borderColor: 'rgb(235, 236, 231)', marginTop:'10px', borderRadius:'20px'}}>
-                            <Form onSubmit={this.handleSubmit}>
-                                <div className='row d-flex justify-content-between'>
-                                    <div className='col-10'>
-                                        <Input type='text' placeholder='Task of the day' value={this.state.task} onChange={this.handleChange} />
+                        <Card body className='task-input'
+                        style={{backgroundColor:'rgba(136, 144, 133, 0.7)', borderColor: 'rgb(235, 236, 231)', marginTop:'10px', borderRadius:'20px'}}>
+                            <div className='container'>
+                                <div className='row d-flex justify-content-center align-items-center'>
+                                    <div className='col-1'>
+                                        <img className='today-img' src={require('../assets/today.png')} />
                                     </div>
-                                    <div className='col-2'>
-                                        <SingleDatePicker
-                                            date={this.state.date} // momentPropTypes.momentObj or null
-                                            onDateChange={date => this.setState({ date })} // PropTypes.func.isRequired
-                                            focused={this.state.focused} // PropTypes.bool
-                                            onFocusChange={({ focused }) => this.setState({ focused })} // PropTypes.func.isRequired
-                                            id="your_unique_id" // PropTypes.string.isRequired,
-                                            placeholder="Due date"
-                                            small
-                                            block
-                                            numberOfMonths={1}
-                                            anchorDirection="right"
-                                        />
+                                    <div className='col-11'>
+                                        <Form onSubmit={this.handleSubmit}>
+                                            <div className='row'>
+                                                <div className='col'>
+                                                    <Input type='text' placeholder='Task of the day' value={this.state.task} onChange={this.handleChange} />
+                                                </div>
+                                            </div>
+                                            <div className='row' style={{marginTop:'10px'}}>
+                                                <div className='col d-flex justify-content-between'>
+                                                    <Button type='submit' className='task-button'>
+                                                        <img className='addtask-img' src={require('../assets/add-task.png')} />
+                                                        Add Task
+                                                    </Button>
+                                                </div>
+                                                <div className='col-2'>
+                                                    <SingleDatePicker
+                                                        date={this.state.date} // momentPropTypes.momentObj or null
+                                                        onDateChange={date => this.setState({ date })} // PropTypes.func.isRequired
+                                                        focused={this.state.focused} // PropTypes.bool
+                                                        onFocusChange={({ focused }) => this.setState({ focused })} // PropTypes.func.isRequired
+                                                        id="your_unique_id" // PropTypes.string.isRequired,
+                                                        placeholder="Due date"
+                                                        small
+                                                        block
+                                                        numberOfMonths={1}
+                                                        anchorDirection="right"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </Form>
                                     </div>
+
                                 </div>
-                                <div className='row' style={{marginTop:'10px'}}>
-                                    <div className='col d-flex justify-content-start'>
-                                        <Button type='submit' className='task-button'>Add Task</Button>
-                                    </div>
-                                </div>
-                            </Form>
+                            </div>
+                            
+                            
+
                         </Card>
                     </div>
                 </div>
