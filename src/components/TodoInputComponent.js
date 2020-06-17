@@ -62,7 +62,7 @@ class TodoInput extends Component {
                             <div className='container'>
                                 <div className='row d-flex justify-content-center align-items-center'>
                                     <div className='col-sm-12 col-lg-1 d-flex justify-content-center align-self-center'>
-                                        <img className='today-img' src={require('../assets/today.png')} />
+                                        <img className='today-img align-self-center' src={require('../assets/today.png')} />
                                     </div>
                                     <div className='col-sm-12 col-lg-11'>
                                         <Form onSubmit={this.handleSubmit}>
