@@ -61,10 +61,10 @@ class TodoInput extends Component {
                         style={{backgroundColor:'rgba(136, 144, 133, 0.7)', borderColor: 'rgb(235, 236, 231)', marginTop:'10px', borderRadius:'20px'}}>
                             <div className='container'>
                                 <div className='row d-flex justify-content-center align-items-center'>
-                                    <div className='col-1'>
+                                    <div className='col-sm-12 col-lg-1 d-flex justify-content-center'>
                                         <img className='today-img' src={require('../assets/today.png')} />
                                     </div>
-                                    <div className='col-11'>
+                                    <div className='col-sm-12 col-lg-11'>
                                         <Form onSubmit={this.handleSubmit}>
                                             <div className='row'>
                                                 <div className='col'>
@@ -72,13 +72,13 @@ class TodoInput extends Component {
                                                 </div>
                                             </div>
                                             <div className='row' style={{marginTop:'10px'}}>
-                                                <div className='col d-flex justify-content-between'>
+                                                <div className='col d-flex justify-content-start'>
                                                     <Button type='submit' className='task-button'>
                                                         <img className='addtask-img' src={require('../assets/add-task.png')} />
                                                         Add Task
                                                     </Button>
                                                 </div>
-                                                <div className='col-2'>
+                                                <div className='col d-flex justify-content-end'>
                                                     <SingleDatePicker
                                                         date={this.state.date} // momentPropTypes.momentObj or null
                                                         onDateChange={date => this.setState({ date })} // PropTypes.func.isRequired
