@@ -27,13 +27,9 @@ h1, h2, h3 {
   margin-top: 15px;
 }
 
-/* .task-input {
-  transition: all 1s ease-in;
-} */
-
-.task-input:hover {
+/* .task-input:hover {
   transform: scale(1.01);
-}
+} */
 
 span.today-date {
   padding-left: 10px;
@@ -116,10 +112,10 @@ span.today-date {
 
 .today-img {
   width: 70px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .addtask-img {
-  width: 25px;
+  width: 22px;
   margin-right: 10px;
 }

@@ -95,12 +95,8 @@ class TodoInput extends Component {
                                             </div>
                                         </Form>
                                     </div>
-
                                 </div>
-                            </div>
-                            
-                            
-
+                            </div>                    
                         </Card>
                     </div>
                 </div>
